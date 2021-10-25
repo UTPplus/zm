@@ -8,7 +8,8 @@ $(document).ready(function() {
         $('.hdr__sidebar__menu .main').append($('.hdr__top__left .logo'))
         $('.hdr__sidebar__menu .main').append($('.hdr__top__left .sell_and_buy_block'))
         $('.hdr__sidebar__menu .main').append($('.hdr__bottom__left ul'))
-        $('.hdr__sidebar__menu .main').append($('.hdr__top__right a.phone'))
+        $('.hdr__sidebar__menu .main ul li:last-child').after($('.top__header__main ul li'))
+        $('.hdr__sidebar__menu .main').append($('.top__header__main .language'))
         $('.hdr__sidebar__menu .main').append($('.hdr__top__right .language'))
         $('.hdr__top').remove()
         $('.hdr__bottom__left').remove()
@@ -113,4 +114,17 @@ $(document).ready(function() {
             nextEl: '.thumb__swiper .next__btn'
         }
     });
+
+    // $('a.enter__to__site.btn__template').trigger('click')
+
+    $('.toogle__show__password span').on('click', function() {
+        var input = $(this).parent().find('input')
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+            input.parent().removeClass('active')
+        } else {
+            input.attr("type", "password");
+            input.parent().addClass('active')
+        }
+    })
 });
