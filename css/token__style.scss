@@ -1,0 +1,860 @@
+    $dark-green: linear-gradient(140.77deg, #0E98A5 -6.87%, rgba(6, 87, 95, 0.99) 128%);
+    $violet: linear-gradient(140.77deg, #674EC0 -6.87%, #3BA6E9 128%);
+    $white: rgba(255, 255, 255, 1);
+    $blue: linear-gradient(180deg, #1B204A 0%, #242961 100%);
+    $green: rgba(0, 181, 151, 1);
+    $dark: rgba(0, 0, 0, 1);
+    $aqua: linear-gradient(140.77deg, #0E98A5 -6.87%, rgba(6, 87, 95, 0.99) 128%);
+    $sky: linear-gradient(140.77deg, #674EC0 -6.87%, #3BA6E9 128%);
+    $rose: linear-gradient(140.77deg, #C04EAE -6.87%, #E93B5A 128%);
+    $light-blue: rgba(30, 97, 139, 1);
+    $light-violet: rgba(135, 143, 207, 1);
+    $grey: rgba(113, 116, 122, 1);
+    $light-grey: rgba(247, 249, 252, 1);
+    $double-light-blue: rgba(131, 198, 240, 1);
+    $deep-blue: rgba(30, 97, 139, 1);
+    $brown: rgba(198, 172, 172, 1);
+    // @media (max-width:1600px) {
+    //     h1 {
+    //         font-size: 34px;
+    //         line-height: 1.3
+    //     }
+    // }
+    // @media (max-width:767px) {
+    //     h1 {
+    //         font-size: 20px;
+    //         line-height: 24px;
+    //         letter-spacing: .12em
+    //     }
+    // }
+    // @media (max-width:1600px) {
+    //     h2 {
+    //         font-size: 30px;
+    //         line-height: 1.3!important
+    //     }
+    // }
+    // @media (max-width:767px) {
+    //     h2 {
+    //         font-size: 24px
+    //     }
+    // }
+    // h5 {
+    //     font-weight: 500;
+    //     font-size: 24px;
+    //     line-height: 29px;
+    // }
+    // @media (max-width:767px) {
+    //     h5 {
+    //         font-weight: 500;
+    //         font-size: 12px;
+    //     }
+    // }
+    // @media (max-width: 500px) {
+    //     p {
+    //         font-weight: 500;
+    //         font-size: 17px;
+    //     }
+    // }
+    // span {
+    //     font-weight: 500;
+    //     font-size: 24px;
+    //     line-height: 29px;
+    // }
+    // @media (max-width:767px) {
+    //     span {
+    //         font-weight: 500;
+    //         font-size: 12px;
+    //         line-height: 15px
+    //     }
+    // }
+    section.general__blockchain {
+        .col-lg-6 {
+            .banner__buttons {
+                display: flex;
+                justify-content: space-between;
+                @media(max-width: 1024px) {
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                }
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    align-items: center;
+                    color: $white;
+                    display: inline-block;
+                    position: relative;
+                    img {
+                        max-width: 100%;
+                        position: absolute;
+                        right: 5%;
+                    }
+                }
+                .token__btn {
+                    max-width: 100%;
+                    padding: 12px 20px;
+                    border-radius: 60px;
+                }
+                .buy__token__btn {
+                    background: $dark-green;
+                    position: relative;
+                    width: 25%;
+                    &::before {
+                        content: url(../images/icon1.svg);
+                        display: block;
+                        position: absolute;
+                        top: 12px;
+                        right: 7%;
+                    }
+                }
+                .buy__card {
+                    background: $violet;
+                    width: 35%;
+                    &::before {
+                        content: url(../images/icon2.svg);
+                        display: block;
+                        position: absolute;
+                        top: 14px;
+                        right: 7%;
+                    }
+                }
+                .buy__exchange {
+                    background: $violet;
+                    width: 35%;
+                    &::before {
+                        content: url(../images/icon3.svg);
+                        display: block;
+                        position: absolute;
+                        top: 14px;
+                        right: 7%;
+                    }
+                }
+                @media(max-width: 1024px) {
+                    .buy__token__btn {
+                        width: 40%;
+                        margin-bottom: 30px;
+                    }
+                }
+                @media(max-width: 991px) {
+                    .buy__token__btn {
+                        width: 25%;
+                    }
+                }
+                @media(max-width: 680px) {
+                    .buy__token__btn {
+                        width: 35%;
+                    }
+                }
+                @media(max-width: 467px) {
+                    .buy__token__btn {
+                        width: 45%;
+                    }
+                }
+                @media(max-width: 391px) {
+                    .buy__token__btn {
+                        width: 50%;
+                    }
+                }
+                @media(max-width: 1024px) {
+                    .buy__card {
+                        width: 55%;
+                        margin-bottom: 30px;
+                    }
+                }
+                @media(max-width: 991px) {
+                    .buy__card {
+                        width: 35%;
+                    }
+                }
+                @media(max-width: 680px) {
+                    .buy__card {
+                        width: 45%;
+                    }
+                }
+                @media(max-width: 467px) {
+                    .buy__card {
+                        width: 55%;
+                    }
+                }
+                @media(max-width: 391px) {
+                    .buy__card {
+                        width: 60%;
+                    }
+                }
+                @media(max-width: 1024px) {
+                    .buy__exchange {
+                        width: 55%;
+                    }
+                }
+                @media(max-width: 991px) {
+                    .buy__exchange {
+                        width: 35%;
+                    }
+                }
+                @media(max-width: 680px) {
+                    .buy__exchange {
+                        width: 45%;
+                    }
+                }
+                @media(max-width: 530px) {
+                    .buy__exchange {
+                        width: 50%;
+                    }
+                }
+                @media(max-width: 467px) {
+                    .buy__exchange {
+                        width: 60%;
+                    }
+                }
+                @media(max-width: 391px) {
+                    .buy__exchange {
+                        width: 68%;
+                    }
+                }
+            }
+        }
+        .col-lg-6 {
+            .coins__img {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+    
+    section.figures {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform: translate(0px, -90px);
+        .container {
+            .front__block {
+                border-radius: 160px;
+                background: linear-gradient(92.33deg, #F7F9FC 15.89%, #FFFFFF 98.87%);
+                box-shadow: 0px -2px 32px 6px rgba(43, 46, 49, 0.2);
+                min-height: 200px;
+                .row {
+                    justify-content: space-around;
+                    .col-lg-3 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        img {
+                            position: absolute;
+                            top: -60px;
+                        }
+                        @media(max-width: 1024px) {
+                            img {
+                                position: static;
+                            }
+                        }
+                        @media(max-width: 767px) {
+                            img {
+                                width: 50%;
+                            }
+                        }
+                        @media(max-width: 400px) {
+                            img {
+                                width: 40%;
+                            }
+                        }
+                        div {
+                            padding: 80px 0px 0 0;
+                            p {
+                                color: $green;
+                                font-weight: 400;
+                            }
+                            span {
+                                color: $dark;
+                                font-size: 24px;
+                                font-weight: 500;
+                            }
+                        }
+                        @media(max-width: 1024px) {
+                            div {
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            @media(max-width: 768px) {
+                .front__block {
+                    padding: 27px;
+                }
+            }
+        }
+    }
+    
+    section.tok__section {
+        .content {
+            text-align: center;
+            padding: 0 0 20px 0;
+        }
+        .row {
+            .item__proto {
+                background-color: $white;
+                transition: background-color .2s linear;
+                transition-duration: .2s;
+                &:hover {
+                    background: $blue;
+                    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+                    transform: translateY(-10px);
+                    transition: 0.4s;
+                    h4 {
+                        color: $white;
+                    }
+                }
+                p {
+                    color: $green;
+                }
+                img {
+                    max-width: 100%;
+                }
+            }
+            @media(min-width: 860px) {
+                .base__for__protopic {
+                    position: relative;
+                    img {
+                        max-width: 100%;
+                        position: absolute;
+                        left: 50%;
+                        margin-right: -50%;
+                        transform: translate(-50%, 0);
+                        bottom: 0;
+                    }
+                    a {
+                        position: absolute;
+                        transform: translate(-50%, 0);
+                        bottom: 7%;
+                    }
+                    // @media(max-width: 576px) {
+                    //     img {
+                    //         position: static;
+                    //         transform: translate(-50%, 0);
+                    //     }
+                    // }
+                }
+            }
+            .burn__block,
+            .coin__block {
+                img {
+                    margin-bottom: 41px;
+                }
+            }
+        }
+    }
+    
+    section.token {
+        .row {
+            .col-lg-6 {
+                h5 {
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: rgba(0, 181, 151, 1);
+                    margin-bottom: 30px
+                }
+            }
+        }
+    }
+    
+    section.defi {
+        padding: 60px 0 30px;
+        .container {
+            h2 {
+                text-align: center;
+                font-size: 30px;
+                padding: 0 0 20px 0;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            .row {
+                .col-lg-3 {
+                    margin-bottom: 30px;
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: $white;
+                        padding: 30px 20px;
+                        margin: 30px 0;
+                        height: 100%;
+                        h4 {
+                            text-transform: uppercase;
+                            color: $dark;
+                            margin: 30px 0 15px 0;
+                            font-weight: 550;
+                        }
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    section.stake__rewarded {
+        .container {
+            h2 {
+                color: $blue;
+                text-align: center;
+                padding: 100px 0 40px 0;
+                font-weight: 600;
+            }
+            .row {
+                .col-lg-3 {
+                    .holder__main {
+                        background: none;
+                        padding: 0;
+                        position: relative;
+                        img {
+                            max-width: 100%;
+                        }
+                        span {
+                            color: $white;
+                            font-size: 24px;
+                            text-align: center;
+                            font-weight: 550;
+                            text-transform: uppercase;
+                            position: absolute;
+                            left: 50%;
+                            margin-right: -50%;
+                            transform: translate(-50%, -50%);
+                            bottom: 60px;
+                        }
+                    }
+                }
+                .col-lg-9 {
+                    .row {
+                        .col-lg-4 {
+                            border-radius: 10px;
+                            margin-bottom: 30px;
+                            div {
+                                background-color: $white;
+                                height: 100%;
+                                max-height: 100%;
+                                padding: 30px;
+                                p {
+                                    color: $dark;
+                                    font-weight: 600;
+                                    max-width: 200px;
+                                    text-transform: uppercase;
+                                }
+                                h3 {
+                                    color: transparent;
+                                    -webkit-background-clip: text;
+                                    background-clip: text;
+                                    background-image: $sky;
+                                    font-weight: 550;
+                                    text-transform: uppercase;
+                                }
+                                img {
+                                    max-width: 100%;
+                                }
+                                // .additional__pad {
+                                //     padding-top: 40%;
+                                // }
+                                // .additional__pad__2 {
+                                //     padding-top: 26%;
+                                // }
+                                .not__avl__text {
+                                    color: transparent;
+                                    -webkit-background-clip: text;
+                                    background-clip: text;
+                                    background-image: $rose;
+                                    font-weight: 550;
+                                }
+                                .avl__text {
+                                    color: transparent;
+                                    -webkit-background-clip: text;
+                                    background-clip: text;
+                                    background-image: $aqua;
+                                    font-weight: 550;
+                                }
+                                @media (max-width: 576px) {
+                                    .additional__pad {
+                                        padding-top: 0;
+                                    }
+                                }
+                                @media (max-width: 575px) {
+                                    .additional__pad__2 {
+                                        padding-top: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .row {
+                .col-lg-3 {
+                    margin-bottom: 30px;
+                    div {
+                        background: $white;
+                        padding: 36px 0;
+                        text-align: center;
+                        transition: color .1s;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        a {
+                            text-decoration: none;
+                            color: $dark;
+                            font-weight: 550;
+                            font-size: 24px;
+                            text-transform: uppercase;
+                            // &:hover {
+                            //     color: $white;
+                            // }
+                        }
+                    }
+                    div:hover {
+                        background: $aqua;
+                        a {
+                            color: $white;
+                            transition: all 0s;
+                        }
+                    }
+                }
+            }
+            .comment__content {
+                padding: 97px 0 0 0;
+                p {
+                    color: $light-blue;
+                }
+            }
+        }
+    }
+    
+    .hidden {
+        display: none
+    }
+    
+    section.inv__pool {
+        background: $sky;
+        padding-bottom: 130px;
+        .container {
+            h2 {
+                color: white;
+                font-weight: 600;
+                padding: 43px 0 31px 0;
+                text-align: center;
+            }
+            .col-lg-12 {
+                .panel {
+                    background: $white;
+                    border-radius: 50px;
+                    .panel-body {
+                        padding: 80px 50px;
+                        div {
+                            .table {
+                                thead {
+                                    tr {
+                                        th {
+                                            border: none;
+                                            width: 20%;
+                                        }
+                                    }
+                                }
+                                tbody {
+                                    tr {
+                                        background-color: $white !important;
+                                        td {
+                                            border: none;
+                                            .button,
+                                            .button__reward,
+                                            .button__details {
+                                                color: #E3DFE9;
+                                                font-size: 18px;
+                                                background: white;
+                                                padding: 17px;
+                                                box-shadow: 3px 3px 30px rgba(118, 96, 168, 0.2);
+                                                border-radius: 15px;
+                                                display: inline-flex;
+                                                cursor: pointer;
+                                                transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+                                                margin-bottom: 15px;
+                                                &:hover {
+                                                    color: #DBD7E0;
+                                                    transform: translateY(3px);
+                                                    box-shadow: 3px 3px 30px rgba(118, 96, 168, 0.17);
+                                                }
+                                                .arrow,
+                                                .arrow__reward,
+                                                .arrow__details {
+                                                    width: 13px;
+                                                    transition: transform 0.3s ease;
+                                                    &.open {
+                                                        transform: rotate(180deg);
+                                                    }
+                                                }
+                                                div {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    span {
+                                                        display: inline;
+                                                        margin-right: 50px;
+                                                        color: $dark;
+                                                    }
+                                                    .currency__span {
+                                                        color: $grey;
+                                                    }
+                                                }
+                                            }
+                                            .dropdown,
+                                            .dropdown__reward {
+                                                position: relative;
+                                                color: #E3DFE9;
+                                                font-size: 18px;
+                                                background: white;
+                                                padding-top: 10px;
+                                                padding-bottom: 10px;
+                                                border-radius: 15px;
+                                                display: block;
+                                                cursor: pointer;
+                                                transform: scale(0.01);
+                                                opacity: 0;
+                                                transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease 0.15s;
+                                                transform-origin: center top;
+                                                overflow: hidden;
+                                                &.open {
+                                                    transform: scale(1);
+                                                    opacity: 1;
+                                                    box-shadow: 3px 3px 30px rgba(118, 96, 168, 0.15);
+                                                }
+                                                a {
+                                                    position: relative;
+                                                    color: $dark;
+                                                    text-decoration: none;
+                                                    display: block;
+                                                    padding: 12.5px 30px;
+                                                    transition: color 0.2s ease, background-color 0.2s ease, padding-left 0.2s ease;
+                                                    overflow: hidden;
+                                                    &.clicked {
+                                                        padding-left: 35px;
+                                                    }
+                                                    &:hover {
+                                                        color: $white;
+                                                        background: $light-violet;
+                                                        padding-left: 35px;
+                                                    }
+                                                    // span {
+                                                    //     content: "";
+                                                    //     top: 0;
+                                                    //     right: 0;
+                                                    //     background-image: url(../images/checked.svg);
+                                                    //     position: absolute;
+                                                    //     transition: width 0.4s ease;
+                                                    //     &.clicked {
+                                                    //         width: 5px;
+                                                    //     }
+                                                    // }
+                                                }
+                                            }
+                                            .progress-bar__container {
+                                                width: 300px;
+                                                height: 2em;
+                                                border-radius: 2rem;
+                                                position: relative;
+                                                overflow: hidden;
+                                                transition: all 0.5s;
+                                                will-change: transform;
+                                                // box-shadow: 0 0 5px #e76f51;
+                                                .progress-bar {
+                                                    position: absolute;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    content: "";
+                                                    background: $aqua;
+                                                    top: 0;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    border-radius: inherit;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    color: white;
+                                                    .progress__bar__text {
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+                                            .progbar__data {
+                                                display: inline-table;
+                                                align-items: center;
+                                                max-width: 100%;
+                                                width: 90%;
+                                                position: relative;
+                                                padding: 30px 0;
+                                                .progbar__text {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    strong {
+                                                        color: $dark;
+                                                        font-weight: 400;
+                                                    }
+                                                    span {
+                                                        color: $green;
+                                                    }
+                                                }
+                                                .progbar__text__1 {
+                                                    position: absolute;
+                                                    float: left;
+                                                }
+                                                .progbar__text__2 {
+                                                    position: absolute;
+                                                    right: 0;
+                                                }
+                                            }
+                                            .button__details {
+                                                background: $sky !important;
+                                                align-items: center;
+                                                span {
+                                                    color: $white;
+                                                    margin-right: 50px;
+                                                }
+                                            }
+                                        }
+                                        .hiddenRow {
+                                            .accordian-body {
+                                                table {
+                                                    // thead {}
+                                                    tbody {
+                                                        tr {
+                                                            td {
+                                                                color: $grey;
+                                                                span {
+                                                                    padding: 5px 25px;
+                                                                    background: $double-light-blue;
+                                                                    color: $deep-blue;
+                                                                    border-radius: 20px;
+                                                                }
+                                                                .span__disabled {
+                                                                    text-decoration: none;
+                                                                    color: $white;
+                                                                    background: $grey;
+                                                                    text-align: center;
+                                                                    border-radius: 20px;
+                                                                    padding: 5px 25px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    section.rewards__pool {
+        background: $light-grey;
+        padding-bottom: 120px;
+        .container {
+            h2 {
+                color: $blue;
+                font-weight: 600;
+                padding: 43px 0 31px 0;
+                text-align: center;
+            }
+            .col-lg-12 {
+                .panel-default {
+                    .panel-body {
+                        box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
+                        padding: 50px;
+                        border-radius: 50px;
+                        background: $white;
+                        .table {
+                            thead {
+                                tr {
+                                    th {
+                                        border: none;
+                                        vertical-align: middle
+                                    }
+                                }
+                            }
+                            tbody {
+                                tr {
+                                    background: $white !important;
+                                    td {
+                                        background: $white !important;
+                                        border: none;
+                                        p {
+                                            color: $grey;
+                                        }
+                                        .reward__span {
+                                            padding: 5px 25px;
+                                            background: $double-light-blue;
+                                            color: $deep-blue;
+                                            border-radius: 20px;
+                                            text-align: center;
+                                        }
+                                        .reward__span__process {
+                                            padding: 5px 25px;
+                                            background: $brown;
+                                            color: $white;
+                                            border-radius: 20px;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    @media(max-width: 700px) {
+                        .panel-body {
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    section.allocation {
+        .container {
+            .new__allocation__style {
+                align-items: center;
+                .col-lg-5 {}
+                .allocation__block {
+                    .progress__bar {
+                        .text {
+                            #token__percent {}
+                        }
+                    }
+                    #myCanvas {
+                        width: 100%;
+                    }
+                    @media(max-width: 991px) {
+                        #myCanvas {
+                            width: 60%;
+                            display: block;
+                            margin: 0 auto;
+                            position: relative;
+                        }
+                    }
+                    @media(max-width: 650px) {
+                        #myCanvas {
+                            width: 70%;
+                            display: block;
+                            margin: 0 auto;
+                            position: relative;
+                        }
+                    }
+                    @media(max-width: 380px) {
+                        #myCanvas {
+                            width: 100%;
+                            display: block;
+                            margin: 0 auto;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+        }
+    }
